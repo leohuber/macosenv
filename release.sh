@@ -32,4 +32,4 @@ sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" install.sh
 zip ../release_v${VERSION}.zip .zprofile install.sh
 cd ../../
 
-#gh release create v${VERSION} --title "Release v${VERSION}" --generate-notes release/release_v${VERSION}.zip
+gh release create v${VERSION} --title "Release v${VERSION}" --generate-notes release/release_v${VERSION}.zip
