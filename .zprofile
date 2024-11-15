@@ -42,19 +42,6 @@ export CLICOLOR=1
 
 LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Load nvm (Node Version Manager)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Load rbenv (Ruby Version Manager)
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# Load pyenv (Python Version Manager)
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # Source global profile if it exists
 if [ -f /etc/zshrc ]; then
     . /etc/zshrc
