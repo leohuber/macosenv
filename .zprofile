@@ -1,3 +1,5 @@
+# VERSION=DEVELOPMENT_VERSION
+
 # Set up aliases
 alias ll='ls -la'
 
