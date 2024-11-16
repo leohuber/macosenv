@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.0.0"
+VERSION="1.1.0"
 
 # Check if GitHub CLI is installed
 if ! command -v gh &> /dev/null
@@ -23,13 +23,14 @@ rm -Rf release
 mkdir -p release/tmp
 
 # Loop through all scripts and replace DEVELOPMENT_VERSION with the string stored in VERSION
-cp .zprofile install.sh release/tmp/
+cp .zprofile .vimrc install.sh release/tmp/
 cd release/tmp
 sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" .zprofile
+sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" .vimrc
 sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" install.sh
 
 # Create a new release zip file
-zip ../release_v${VERSION}.zip .zprofile install.sh
+zip ../release_v${VERSION}.zip .zprofile .vimrc install.sh
 cd ../../
 
-gh release create v${VERSION} --title "Release v${VERSION}" --generate-notes release/release_v${VERSION}.zip
+# gh release create v${VERSION} --title "Release v${VERSION}" --generate-notes release/release_v${VERSION}.zip
