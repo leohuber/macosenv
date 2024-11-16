@@ -13,7 +13,6 @@ To install and set up the project, follow these steps:
 
 2. **Run the installation script:**
 ```sh
-cd yourproject
 ./install.sh
 ```
 
