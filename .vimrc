@@ -3,12 +3,6 @@
 " Enable syntax highlighting
 syntax on
 
-" Set line numbers
-set number
-
-" Enable relative line numbers
-set relativenumber
-
 " Set tabs and indentation
 set tabstop=4
 set shiftwidth=4
@@ -28,9 +22,6 @@ set incsearch
 
 " Show matching parentheses
 set showmatch
-
-" Set color scheme
-colorscheme desert
 
 " Enable auto-completion menu
 set completeopt=menuone,noselect

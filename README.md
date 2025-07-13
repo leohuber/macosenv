@@ -3,6 +3,20 @@
 ## Description
 This project automates the setup and configuration of a development environment by providing scripts to install and configure essential files such as `.zprofile` and `.vimrc`. It includes a release process that packages these configuration files into a zip archive, ready for distribution. The project ensures that the latest version of the configuration files is always used by replacing placeholder version strings with the actual version number during the release process.
 
+## Prerequisites
+
+### Prerequisites
+
+1. **Install Starship Prompt:**
+    Install starship with brew
+    ```sh
+    brew install starship
+    ```
+    Ensure Starship is added to your shell configuration profile `.zprofile`:
+    ```sh
+    eval "$(starship init zsh)"
+    ```
+
 ## Installation
 To install and set up the project, follow these steps:
 
