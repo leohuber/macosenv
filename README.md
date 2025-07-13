@@ -29,4 +29,7 @@ To install and set up the project, follow these steps:
 ./install.sh
 ```
 
+3. **Configure the fonts**:
+The fonts DroidSansMono have been copied to `/Users/leo/Library/Fonts` and are availabel to Mac OS X. Make sure to configure the font ***DroidSansM Nerd*** font in your terminal application.
+
 This will copy the configuration files to your home directory, replacing any existing versions.
