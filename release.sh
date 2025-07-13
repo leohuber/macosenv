@@ -24,7 +24,7 @@ mkdir -p release/tmp
 mkdir -p release/tmp/fonts
 
 # Copy necessary files to the release directory
-cp .zprofile .zshrc .vimrc install.sh release/tmp/
+cp .zprofile .zshrc .vimrc install.sh starship.toml release/tmp/
 cp ./fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf release/tmp/fonts/
 
 # Loop through all scripts and replace DEVELOPMENT_VERSION with the string stored in VERSION
@@ -33,9 +33,10 @@ sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" .zprofile
 sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" .zshrc
 sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" .vimrc
 sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" install.sh
+sed -i '' "s/DEVELOPMENT_VERSION/${VERSION}/g" starship.toml
 
 # Create a new release zip file
-zip ../release_v${VERSION}.zip .zprofile .zshrc .vimrc install.sh ./fonts/DroidSansMNerdFont-Regular.otf
+zip ../release_v${VERSION}.zip .zprofile .zshrc .vimrc install.sh starship.toml ./fonts/DroidSansMNerdFont-Regular.otf
 cd ../../
 
 #gh release create v${VERSION} --title "Release v${VERSION}" --generate-notes release/release_v${VERSION}.zip

@@ -23,7 +23,7 @@ if [ -d "$HOME/.config" ] && [ -f "$HOME/.config/starship.toml" ]; then
 fi
 
 # Copy fonts
-copy ./fonts/DroidSansMNerdFont-Regular.otf $HOME/Library/Fonts/
+cp ./fonts/DroidSansMNerdFont-Regular.otf $HOME/Library/Fonts/
 
 # Copy new .zprofile file
 cp .zprofile $HOME/.zprofile
