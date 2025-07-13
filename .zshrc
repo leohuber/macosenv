@@ -1,3 +1,4 @@
+# add Homebrew to PATH
 export PATH=$PATH:/opt/homebrew/bin
 
 # Enable colors in the terminal
