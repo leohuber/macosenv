@@ -7,14 +7,13 @@ This project automates the setup and configuration of a development environment 
 
 ### Prerequisites
 
+1. **Install Homebrew**:
+    If not already installed, install [Homebrew](https://brew.sh).
+
 1. **Install Starship Prompt:**
-    Install starship with brew
+    Install [Starship](https://starship.rs) with Homebrew:
     ```sh
     brew install starship
-    ```
-    Ensure Starship is added to your shell configuration profile `.zprofile`:
-    ```sh
-    eval "$(starship init zsh)"
     ```
 
 ## Installation
@@ -30,4 +29,4 @@ To install and set up the project, follow these steps:
 ./install.sh
 ```
 
-This will copy the `.zprofile` and `.vimrc` configuration files to your home directory, replacing any existing versions.
+This will copy the configuration files to your home directory, replacing any existing versions.
