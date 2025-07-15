@@ -50,3 +50,6 @@ filetype indent on
 
 " Show the mode you are on the last line.
 set showmode
+
+" Enable spellcheck for all markdwon files in minutes directory
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=de_ch,en_us
