@@ -48,3 +48,6 @@ eval "$(starship init zsh)"
 
 # Set up the PATH
 alias ll='ls -la'
+
+# Alias to open vim in meeting minutes dir (for work context only)
+alias minutes='cd /Users/leo/OneDrive/Minutes && vim .'

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.2.2"
+VERSION="1.2.3"
 
 # Check if GitHub CLI is installed
 if ! command -v gh &> /dev/null

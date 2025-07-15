@@ -36,9 +36,6 @@ filetype plugin indent on
 " Set clipboard to use system clipboard
 set clipboard=unnamedplus
 
-" Enable persistent undo
-set undofile
-
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
