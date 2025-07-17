@@ -1,7 +1,7 @@
 # VERSION=DEVELOPMENT_VERSION
 
 # add Homebrew to PATH
-export PATH=$PATH:/opt/homebrew/bin
+export PATH=/opt/homebrew/bin:$PATH
 
 # Enable colors in the terminal
 export CLICOLOR=1
