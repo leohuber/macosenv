@@ -44,3 +44,17 @@ To install and set up the project, follow these steps:
     ```sh
     :PlugUpdate
     ```
+
+1. **Install github cli**:
+    Install [github cli](https://cli.github.com) with homebrew:
+    ```sh
+    brew install gh
+    ```
+    After installation authenticate with github.com:
+    ```sh
+    gh auth login
+    ```
+    After auhtentication install copilot for cli:
+    ```sh
+    gh extension install github/gh-copilot
+    ```
